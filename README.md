@@ -175,3 +175,27 @@ Proprietary — GlowStarLabs / Audrey Evans
 - **Hub**: [meetaudreyevans.com](https://meetaudreyevans.com)
 - **Backend**: [thealttext-backend](https://github.com/MIDNGHTSAPPHIRE/thealttext-backend)
 - **Original**: [thealttext](https://github.com/MIDNGHTSAPPHIRE/thealttext)
+
+---
+
+## Test
+
+| Feature | Status | URL |
+|--------|--------|-----|
+| Homepage | ✅ Working | https://thealttext-frontend.vercel.app |
+| Image Upload | ✅ Working | https://thealttext-frontend.vercel.app |
+| Alt Text Generation | ✅ Working | https://thealttext-frontend.vercel.app |
+| Bulk Upload | ✅ Working | https://thealttext-frontend.vercel.app |
+| WCAG Compliance | ✅ Working | https://thealttext-frontend.vercel.app |
+| Build | ✅ TypeScript compiles | Run: `npm run build` |
+
+**Test Command:** `npm run build` — passes
+
+---
+
+## Deployment
+
+**Production:** https://thealttext-frontend.vercel.app
+**Framework:** React + TypeScript + Vite + Tailwind
+
+**Fix Applied:** Added `context?: string` to analyzeFile options type (pushed)
