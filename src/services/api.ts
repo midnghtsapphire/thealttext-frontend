@@ -69,7 +69,7 @@ export const authAPI = DEMO_MODE ? mockAuthAPI : {
 export const imageAPI = DEMO_MODE ? mockImageAPI : {
   analyzeUrl: (data: { image_url: string; language?: string; tone?: string; wcag_level?: string; context?: string }) =>
     api.post('/images/analyze-url', data),
-  analyzeFile: (file: File, options: { language?: string; tone?: string; wcag_level?: string } = {}) => {
+  analyzeFile: (file: File, options: { language?: string; tone?: string; wcag_level?: string; context?: string } = {}) => {
     const formData = new FormData();
     formData.append('file', file);
     Object.entries(options).forEach(([k, v]) => { if (v) formData.append(k, v); });
